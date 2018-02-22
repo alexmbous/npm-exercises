@@ -1,8 +1,11 @@
+
 "use strict";
+const $ = require('jquery');
 
+const myName = "Alex";
 
-const sayHello = () => { console.log( "hello")};
-sayHello();
+const sayHello = (myName) => { return ( `hello ${myName}`)};
+console.log(sayHello(myName));
 
-
+$('body').css('background-color', 'blue');
 
